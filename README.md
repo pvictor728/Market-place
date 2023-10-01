@@ -18,30 +18,30 @@ Credito: Coloca o valor na lista de valores a pagar do comprador e adiciona nos 
 
 Compra/Venda
 
-CPF Comprador.
-CNPJ do Vendedor
-. Forma de Pagamento
-. Itens
-. Comprador
+. CPF Comprador.
+. CNPJ do Vendedor.
+. Forma de Pagamento.
+. Itens.
+. Comprador.
 
-. nome
-. cpf
-. saldo da conta
-. valores a pagar
-. compras realizadas
-. Vendedor
+. nome.
+. cpf.
+. saldo da conta.
+. valores a pagar.
+. compras realizadas.
+. Vendedor.
 
-. nome
-. cnpj
-. saldo da conta
-. valores a receber
-. vendas realizadas
-. catalogo de produtos
-. Produto
+. nome.
+. cnpj.
+. saldo da conta.
+. valores a receber.
+. vendas realizadas.
+. catalogo de produtos.
+. Produto.
 
-. codigo
-. nome
-. precoUnitario
+. codigo.
+. nome.
+. precoUnitario.
 
 # Requisitos:
 As funcionalidades de cadastro de vendedores, compradores e produtos foram realizadas através da criação das instâncias através de construtores e respectiva inclusão nas coleções.
