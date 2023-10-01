@@ -8,11 +8,11 @@ Implementação de um sistema de cadastro de compradores e vendedores onde é po
 
 Forma de Pagamento
 
-. PIX Instantaneamente debita o valor da conta do comprador e deposita na conta do vendedor.
-. Boleto Verifica se a data de vencimento do boleto não foi excedida. Instantaneamente debita o valor da conta do comprador e adiciona nos valores a receber do vendedor, descontado do valor para emissão do boleto.
-. Débito Instantaneamente debita o valor da conta do comprador e deposita na conta do vendedor, descontado da taxa percentual de cobrança da operadora do cartão.
-. Credito Coloca o valor na lista de valores a pagar do comprador e adiciona nos valores a receber do vendedor, descontado da taxa percentual de cobrança da operadora do cartão.
-. Compra/Venda
+PIX Instantaneamente debita o valor da conta do comprador e deposita na conta do vendedor.
+Boleto Verifica se a data de vencimento do boleto não foi excedida. Instantaneamente debita o valor da conta do comprador e adiciona nos valores a receber do vendedor, descontado do valor para emissão do boleto.
+Débito Instantaneamente debita o valor da conta do comprador e deposita na conta do vendedor, descontado da taxa percentual de cobrança da operadora do cartão.
+Credito Coloca o valor na lista de valores a pagar do comprador e adiciona nos valores a receber do vendedor, descontado da taxa percentual de cobrança da operadora do cartão.
+Compra/Venda
 
 . CPF Comprador
 . CNPJ do Vendedor
