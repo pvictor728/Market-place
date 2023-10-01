@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.controlador.Tela2Controlador">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="Transacao" mnemonicParsing="false" onAction="#dasegundaparaprincipal" text="Transação">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Aba de Transação" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Dados">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Aba de listagem de dados" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="520.0" prefWidth="558.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="230.0" layoutY="25.0" text="Selecione :" />
+            <CheckBox fx:id="CPFcheck" layoutX="114.0" layoutY="61.0" mnemonicParsing="false" onAction="#CPFcheckSelected" text="Comprador" />
+            <CheckBox fx:id="CNPJcheck" layoutX="336.0" layoutY="61.0" mnemonicParsing="false" onAction="#CNPJcheckSelected" text="Vendedor" />
+            <Label fx:id="mostrardados" layoutX="45.0" layoutY="166.0" prefHeight="337.0" prefWidth="467.0" />
+            <TextField fx:id="InputAll" layoutX="184.0" layoutY="132.0" visible="false" />
+            <Button fx:id="BotaoDados" layoutX="346.0" layoutY="132.0" mnemonicParsing="false" onAction="#ButtonConfirm" text="Confirmar" visible="false" />
+            <Label fx:id="labelversatil" layoutX="180.0" layoutY="97.0" visible="false" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

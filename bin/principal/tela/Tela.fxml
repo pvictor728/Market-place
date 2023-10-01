@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.controlador.TelaControlador">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="Transacao" mnemonicParsing="false" text="Transação">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Aba de Transação" />
+               </items></Menu>
+          <Menu fx:id="Dados" mnemonicParsing="false" onAction="#daprincipalparasegunda" text="Dados">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Aba de listagem de dados" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="593.0" prefWidth="571.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="47.0" layoutY="14.0" text="CPF do Comprador:" />
+            <Label layoutX="47.0" layoutY="74.0" text="CNPJ do Vendedor:" />
+            <ComboBox fx:id="ProdutList" layoutX="191.0" layoutY="131.0" prefWidth="150.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></ComboBox>
+            <Label layoutX="67.0" layoutY="134.0" text="Produto:" />
+            <TextField fx:id="CpfInput" layoutX="191.0" layoutY="11.0" />
+            <TextField fx:id="CnpjInput" layoutX="191.0" layoutY="71.0" />
+            <Label layoutX="37.0" layoutY="224.0" text="Método de pagamento" />
+            <Button fx:id="CheckOut" layoutX="326.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedcheckout" text="Finalizar Compra" />
+            <TableView fx:id="TableInsert" editable="true" layoutX="30.0" layoutY="379.0" prefHeight="200.0" prefWidth="519.0">
+              <columns>
+                <TableColumn fx:id="CodigoColum" prefWidth="143.0" text="Código" />
+                <TableColumn fx:id="NomeColum" prefWidth="227.0" text="Nome" />
+                  <TableColumn fx:id="PrecoColum" prefWidth="148.0" text="Preço" />
+              </columns>
+            </TableView>
+            <Label layoutX="183.0" layoutY="348.0" text="Lista de Compras" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="AddCart" layoutX="30.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#buttomcarclicked" text="Adicionar ao Carrinho" />
+            <Accordion layoutX="369.0" layoutY="84.0" />
+            <Label fx:id="NomeComprador" layoutX="410.0" layoutY="14.0" text="Nome do Comprador" />
+            <Label fx:id="NomeVendedor" layoutX="410.0" layoutY="74.0" text="Nome do Vendedor" />
+            <ComboBox fx:id="PayList" layoutX="191.0" layoutY="221.0" onAction="#changedpay" prefWidth="150.0" />
+            <DatePicker fx:id="DateInsert" layoutX="370.0" layoutY="221.0" promptText="Vencimento do Boleto" visible="false" />
+            <Button fx:id="ButtomCPF" layoutX="343.0" layoutY="7.0" minWidth="37.0" mnemonicParsing="false" onMouseClicked="#CPFclicked" prefHeight="30.0" prefWidth="37.0" text="OK" />
+            <Button fx:id="ButtomCNPJ" layoutX="343.0" layoutY="67.0" minWidth="37.0" mnemonicParsing="false" onMouseClicked="#CNPJclicked" prefHeight="30.0" prefWidth="37.0" text="OK" />
+            <Label fx:id="labelpolimorfico" layoutX="175.0" layoutY="263.0" text="Transferência Concluída" textAlignment="CENTER" underline="true" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="excessaolabeldata" layoutX="377.0" layoutY="135.0" prefHeight="83.0" prefWidth="185.0" textAlignment="JUSTIFY" textFill="RED" visible="false" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>
