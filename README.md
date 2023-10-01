@@ -18,8 +18,9 @@ Credito: Coloca o valor na lista de valores a pagar do comprador e adiciona nos 
 
 Compra/Venda
 
-. CPF Comprador
-. CNPJ do Vendedor
+CPF Comprador
+
+CNPJ do Vendedor
 . Forma de Pagamento
 . Itens
 . Comprador
